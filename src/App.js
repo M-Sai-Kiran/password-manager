@@ -1,26 +1,8 @@
-import React, { useState } from "react";
-import { Button, TextField } from "@mui/material";
-import { passwordGenerator } from "./util";
+import React from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [generatedPassword, setGeneratedPassword] = useState("");
-  const btnClicked = () => {
-    setGeneratedPassword(passwordGenerator());
-  };
-
-  return (
-    <>
-      <Button variant="contained" onClick={btnClicked}>
-        Generate Password
-      </Button>
-      <TextField
-        id="outlined-basic"
-        label="password"
-        value={generatedPassword}
-        variant="outlined"
-      />
-    </>
-  );
+  return <Navbar />;
 }
 
 export default App;
