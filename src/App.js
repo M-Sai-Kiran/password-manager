@@ -1,7 +1,8 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <>This is just the beginning.</>;
+  return <Navbar />;
 }
 
 export default App;
